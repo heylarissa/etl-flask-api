@@ -28,7 +28,7 @@ def move_file(source, destination):
         print(f"Error: '{os.path.basename(source)}' not found.")
 
 
-def main(
+def unzip_files(
     zip_filename: str = ZIP_FILENAME,
     backup_dir: str = BACKUP_DIR,
     output_dir: str = OUTPUT_DIR,
@@ -44,4 +44,4 @@ def main(
 
 
 if __name__ == "__main__":
-    main()
+    unzip_files()
