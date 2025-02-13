@@ -39,8 +39,8 @@ def merge_with_types(dados_df, tipos_df):
 def generate_sql_insert_statements(df, output_file):
     """Gera o arquivo SQL contendo os comandos INSERT com tratamento de erro."""
     try:
-        values = []  # Lista para armazenar os valores antes de escrever no arquivo
-
+        values = []  
+        
         for _, row in df.iterrows():
             try:
                 values.append(
