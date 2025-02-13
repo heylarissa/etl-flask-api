@@ -4,6 +4,7 @@ import os
 DATA_DIR = os.path.join(os.getcwd(), "data")
 TIPOS_CSV = os.path.join(DATA_DIR, "tipos.csv")
 
+
 def load_types():
     """Carrega os tipos do arquivo tipos.csv e retorna um dicionário {id: nome}."""
     if not os.path.exists(TIPOS_CSV):
